@@ -7,9 +7,9 @@ class twoDimensionArray {
     }
 
     init() {
-        for (let i = 0; i < this.width; i++) {
+        for (let i = 0; i < this.height; i++) {
             this.arr[i] = [];
-            for (var j = 0; j < this.height; j++) {
+            for (var j = 0; j < this.width; j++) {
                 this.arr[i][j] = 0;
             }
         }
@@ -18,5 +18,5 @@ class twoDimensionArray {
 
 }
 
-const newArr = new twoDimensionArray(10, 10);
+const newArr = new twoDimensionArray(5, 3);
 console.log(newArr.init());
